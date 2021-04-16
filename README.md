@@ -4,6 +4,16 @@ Drivers for the rtl8814au chipset wireless adapters
 
 # build & install
 Got an old Edimax AC1750 wireless adaptor bought on Amazon, tested on ubuntu 20.04 (on April 16, 2021) with Linux kernel `5.8.0-48-generic`.
+
+```bash
+$ lsusb
+...
+Bus 001 Device 004: ID 7392:a833 Edimax Technology Co., Ltd
+...
+```
+
+According to https://github.com/chemag/ew7833uac, device ID `0xa833` means it's using rtl8814AU chipset.
+
 ```bash
 $ git clone https://github.com/aircrack-ng/rtl8814au.git
 $ sudo mv rtl8814au /usr/src/rtl8814au-5.8.5.1
