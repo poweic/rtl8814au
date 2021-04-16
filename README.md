@@ -3,11 +3,17 @@ Drivers for the rtl8814au chipset wireless adapters
 
 
 # build & install
-```
+```bash
 $ git clone https://github.com/aircrack-ng/rtl8814au.git
-$ cd rtl8814au
-$ make
-$ make install
+$ sudo mv rtl8814au /usr/src/rtl8814au-5.8.5.1
+$ sudo dkms add -m rtl8814au -v 5.8.5.1
+$ sudo dkms build -m rtl8814au -v 5.8.5.1
+$ sudo dkms install -m rtl8814au -v 5.8.5.1
+```
+
+# To remove
+```bash
+sudo dkms remove -m rtl8814au -v 5.8.5.1 --all
 ```
 
 # TODO
