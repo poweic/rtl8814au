@@ -3,6 +3,7 @@ Drivers for the rtl8814au chipset wireless adapters
 
 
 # build & install
+Tested on ubuntu 20.04 (on April 16, 2021) with Linux kernel `5.8.0-48-generic`.
 ```bash
 $ git clone https://github.com/aircrack-ng/rtl8814au.git
 $ sudo mv rtl8814au /usr/src/rtl8814au-5.8.5.1
